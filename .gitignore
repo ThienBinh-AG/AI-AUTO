@@ -28,3 +28,9 @@ desktop.ini
 __pycache__/
 *.py[cod]
 node_modules/
+
+# Kho tư liệu gốc dung lượng lớn (không push lên GitHub để tránh vượt quota)
+NKTHIENBINH/
+*.rar
+*.zip
+*.dwg
