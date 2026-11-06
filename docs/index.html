@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiên Bình — Cửa Vách Nhôm Kính & Phụ Kiện Cao Cấp</title>
+  <meta name="description" content="Thiên Bình - Nhà cung cấp giải pháp tổng thể Cửa vách nhôm kính, Kính kiến trúc tiết kiệm năng lượng và Phụ kiện kim khí đồng bộ tiêu chuẩn Châu Âu, Nhật Bản.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0b132b;
+      --primary-light: #1c2541;
+      --accent: #d4af37;
+      --accent-hover: #b8972e;
+      --accent-glow: rgba(212, 175, 55, 0.25);
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --border-accent: rgba(212, 175, 55, 0.3);
+      --radius: 14px;
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.12);
+      --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      background: #060b18;
+      color: #94a3b8;
+      font-size: 0.825rem;
+      padding: 8px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .topbar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .topbar a:hover {
+      color: var(--accent);
+    }
+    .topbar-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(11, 19, 43, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 14px 24px;
+    }
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #d4af37, #997316);
+      color: #0b132b;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+    .brand-info h1 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .brand-info span {
+      font-size: 0.725rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      font-weight: 600;
+      display: block;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    .btn-cta {
+      background: linear-gradient(135deg, #d4af37 0%, #b8972e 100%);
+      color: #0b132b !important;
+      font-weight: 700 !important;
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0 4px 15px var(--accent-glow);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: radial-gradient(circle at 85% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 40%),
+                  linear-gradient(180deg, #0b132b 0%, #151e3f 100%);
+      color: #ffffff;
+      padding: 70px 24px 80px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-accent);
+      color: #f1c40f;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.825rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .hero h2 {
+      font-size: 2.85rem;
+      font-weight: 800;
+      line-height: 1.25;
+      max-width: 920px;
+      margin: 0 auto 20px;
+      color: #ffffff;
+    }
+    .hero h2 span {
+      background: linear-gradient(120deg, #fef08a 0%, #d4af37 50%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: #94a3b8;
+      max-width: 720px;
+      margin: 0 auto 36px;
+      font-weight: 400;
+    }
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #ffffff;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 1040px;
+      margin: 50px auto 0;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 24px;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 8px 16px;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .stat-item:last-child {
+      border-right: none;
+    }
+    .stat-number {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #fcd34d;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+
+    /* MAIN CONTAINER */
+    .main-wrap {
+      max-width: 1280px;
+      margin: -25px auto 60px;
+      padding: 0 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* SEARCH & FILTER CONTROLS */
+    .controls-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .search-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .search-box {
+      flex: 1;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 14px 20px 14px 48px;
+      border-radius: 12px;
+      border: 1.5px solid #cbd5e1;
+      font-family: var(--font);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-box input:focus {
+      border-color: #b8972e;
+      box-shadow: 0 0 0 4px var(--accent-glow);
+    }
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+    .tab-btn {
+      background: #f1f5f9;
+      border: 1px solid transparent;
+      color: #475569;
+      font-family: var(--font);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+    .tab-btn.active {
+      background: #0b132b;
+      color: #ffffff;
+      border-color: #0b132b;
+      box-shadow: 0 4px 12px rgba(11, 19, 43, 0.25);
+    }
+
+    /* SECTION HEADER */
+    .section-title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 48px 0 24px;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 28px;
+      background: linear-gradient(180deg, #d4af37, #997316);
+      border-radius: 4px;
+    }
+    .result-count {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      font-weight: 500;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+      gap: 26px;
+    }
+
+    /* PRODUCT CARD */
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: #cbd5e1;
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .category-badge {
+      display: inline-block;
+      font-size: 0.725rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .badge-nhom {
+      background: #eff6ff;
+      color: #2563eb;
+      border: 1px solid #bfdbfe;
+    }
+    .badge-kinh {
+      background: #f0fdf4;
+      color: #16a34a;
+      border: 1px solid #bbf7d0;
+    }
+    .badge-phukien {
+      background: #faf5ff;
+      color: #9333ea;
+      border: 1px solid #e9d5ff;
+    }
+    .badge-he-dac-biet {
+      background: #fffbeb;
+      color: #d97706;
+      border: 1px solid #fde68a;
+    }
+    .origin-tag {
+      font-size: 0.775rem;
+      color: #64748b;
+      font-weight: 600;
+      background: #f8fafc;
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+    }
+    .product-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+    .product-desc {
+      font-size: 0.92rem;
+      color: #475569;
+      margin-bottom: 18px;
+      line-height: 1.55;
+    }
+    .spec-list {
+      background: #f8fafc;
+      border: 1px solid #f1f5f9;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .spec-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.825rem;
+      border-bottom: 1px dashed #e2e8f0;
+      padding-bottom: 6px;
+    }
+    .spec-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .spec-label {
+      color: #64748b;
+      font-weight: 500;
+    }
+    .spec-val {
+      color: #0f172a;
+      font-weight: 700;
+      text-align: right;
+    }
+    .card-footer {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid #f1f5f9;
+    }
+    .btn-detail {
+      flex: 1;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: #334155;
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .btn-detail:hover {
+      background: #0b132b;
+      color: #ffffff;
+      border-color: #0b132b;
+    }
+    .btn-quote {
+      background: linear-gradient(135deg, #d4af37, #b8972e);
+      color: #0b132b;
+      border: none;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+    .btn-quote:hover {
+      background: #b8972e;
+    }
+
+    /* SPEC MATRIX TABLE */
+    .matrix-section {
+      margin: 64px 0;
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+    .matrix-section h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+    .matrix-section p {
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+    .table-container {
+      overflow-x: auto;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .spec-table th {
+      background: #0b132b;
+      color: #ffffff;
+      padding: 14px 18px;
+      text-align: left;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .spec-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+    }
+    .spec-table tr:hover td {
+      background: #f8fafc;
+    }
+    .spec-table tr:last-child td {
+      border-bottom: none;
+    }
+    .badge-tier {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+    .tier-luxury {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    .tier-premium {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+    .tier-standard {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    /* 7 STEPS SECTION */
+    .steps-section {
+      background: linear-gradient(135deg, #0b132b 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 50px 36px;
+      border-radius: var(--radius);
+      margin: 64px 0;
+      border: 1px solid var(--border-accent);
+    }
+    .steps-section h3 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .steps-section p.sub {
+      text-align: center;
+      color: #94a3b8;
+      max-width: 680px;
+      margin: 0 auto 36px;
+      font-size: 0.95rem;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+    }
+    .step-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px 14px;
+      text-align: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .step-box:hover {
+      background: rgba(212, 175, 55, 0.12);
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+    .step-num {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      color: #0b132b;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      font-size: 1rem;
+    }
+    .step-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      color: #f8fafc;
+    }
+    .step-desc {
+      font-size: 0.775rem;
+      color: #94a3b8;
+      line-height: 1.4;
+    }
+
+    /* CONTACT FORM SECTION */
+    .contact-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+      margin-bottom: 60px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .contact-info h3 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    .contact-info p {
+      color: #475569;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .info-content h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .info-content span {
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1.5px solid #cbd5e1;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: #b8972e;
+    }
+    .btn-submit {
+      width: 100%;
+      background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
+      color: #fcd34d;
+      border: 1px solid var(--accent);
+      padding: 14px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-submit:hover {
+      background: #060b18;
+      box-shadow: 0 4px 15px rgba(11, 19, 43, 0.3);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #060b18;
+      color: #94a3b8;
+      padding: 40px 24px 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.875rem;
+    }
+    .footer-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 20px auto 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+
+    /* FLOATING BUTTONS */
+    .floating-actions {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .float-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .float-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    }
+    .float-zalo {
+      background: #0068ff;
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+    .float-phone {
+      background: #16a34a;
+    }
+    .float-top {
+      background: #0b132b;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      cursor: pointer;
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(11, 19, 43, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-card {
+      background: #ffffff;
+      border-radius: 18px;
+      max-width: 640px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 32px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #f1f5f9;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+    }
+    .modal-close:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero h2 { font-size: 2.1rem; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .stat-item { border-right: none; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .product-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div>📍 <strong>THIÊN BÌNH</strong> — Giải pháp Cửa vách nhôm kính & Phụ kiện công trình tiêu chuẩn cao</div>
+    <div class="topbar-right">
+      <span>⏱ Giờ làm việc: 7:30 - 18:00 (Thứ 2 - Thứ 7)</span>
+      <a href="tel:0988000000">📞 Hotline kỹ thuật: <strong>0988.xxx.xxx</strong></a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">TB</div>
+        <div class="brand-info">
+          <h1>THIÊN BÌNH</h1>
+          <span>Vững bền kiến trúc - Nâng tầm không gian</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#products" onclick="filterCategory('nhom')">Hệ Nhôm</a>
+        <a href="#products" onclick="filterCategory('kinh')">Kính Kiến Trúc</a>
+        <a href="#products" onclick="filterCategory('phukien')">Phụ Kiện</a>
+        <a href="#matrix">Bảng Tra Thông Số</a>
+        <a href="#quy-trinh">Quy Trình 7 Bước</a>
+        <a href="#contact" class="btn-cta">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          Nhận Báo Giá Dự Toán
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-badge">🌟 Danh Mục Sản Phẩm Chính Hãng 2026</div>
+    <h2>Kiến Tạo Công Trình Đẳng Cấp Với <span>Hệ Nhôm Kính Tiêu Chuẩn Quốc Tế</span></h2>
+    <p>Tổng hợp hệ sinh thái vật tư chính hãng: Hệ nhôm Châu Âu & Nhật Bản, Kính cản nhiệt Low-E, Kính dán an toàn, Kính hộp chân không và Phụ kiện kim khí đồng bộ rãnh C.</p>
+    
+    <div class="hero-actions">
+      <a href="#products" class="btn-cta" style="padding: 14px 30px; font-size: 1.05rem;">
+        🔍 Xem Danh Mục Sản Phẩm
+      </a>
+      <a href="#contact" class="btn-secondary">
+        📋 Đăng Ký Khảo Sát & Tư Vấn
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">43+</div>
+        <div class="stat-label">Hãng Nhôm Tiêu Chuẩn</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Kính An Toàn & Low-E</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Hệ Phụ Kiện Rãnh C Đồng Bộ</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">25 Năm</div>
+        <div class="stat-label">Bảo Hành Bề Mặt Sơn/Xi Mạ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN WRAPPER -->
+  <main class="main-wrap">
+    
+    <!-- CONTROLS CARD -->
+    <div class="controls-card" id="products">
+      <div class="search-row">
+        <div class="search-box">
+          <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="searchInput" placeholder="Tìm kiếm nhanh: Xingfa, Schueco, Maxpro, Low-E, Giesse, Khóa vân tay, Keo Dowsil..." oninput="handleSearch()">
+        </div>
+      </div>
+      
+      <div class="filter-tabs">
+        <button class="tab-btn active" onclick="filterCategory('all', this)">Tất Cả Sản Phẩm (20)</button>
+        <button class="tab-btn" onclick="filterCategory('nhom', this)">🚪 Hệ Cửa Nhôm (8)</button>
+        <button class="tab-btn" onclick="filterCategory('kinh', this)">🪟 Kính Kiến Trúc (5)</button>
+        <button class="tab-btn" onclick="filterCategory('phukien', this)">🔑 Phụ Kiện Kim Khí (5)</button>
+        <button class="tab-btn" onclick="filterCategory('he-dac-biet', this)">🏢 Mặt Dựng & Cửa Tự Động (2)</button>
+      </div>
+    </div>
+
+    <!-- SECTION TITLE -->
+    <div class="section-title-wrap">
+      <h3 class="section-title" id="categoryTitle">Tất Cả Sản Phẩm & Giải Pháp Thiên Bình</h3>
+      <div class="result-count" id="resultCount">Hiển thị 20 sản phẩm</div>
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid" id="productGrid">
+      <!-- Dynamic Rendered Cards -->
+    </div>
+
+    <!-- SPEC MATRIX SECTION -->
+    <section class="matrix-section" id="matrix">
+      <h3>📊 Bảng Tra Cứu Nhanh Thông Số Kỹ Thuật Các Hệ Nhôm</h3>
+      <p>Đối chiếu chi tiết giữa các hệ nhôm định hình cao cấp được Thiên Bình gia công lắp đặt theo tiêu chuẩn KCS nghiêm ngặt.</p>
+      
+      <div class="table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Dòng Sản Phẩm</th>
+              <th>Xuất Xứ / Công Nghệ</th>
+              <th>Độ Dày Nhôm</th>
+              <th>Công Nghệ Bề Mặt</th>
+              <th>Hệ Phụ Kiện Tương Thích</th>
+              <th>Phân Khúc Ứng Dụng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Schüco (Đức)</strong></td>
+              <td>CHLB Đức / Châu Âu</td>
+              <td>2.0 - 3.0 mm (Cầu cách nhiệt)</td>
+              <td>Sơn tĩnh điện cao cấp (Bảo hành 25 năm)</td>
+              <td>Schüco đồng bộ rãnh C</td>
+              <td><span class="badge-tier tier-luxury">Siêu Biệt Thự / Luxury</span></td>
+            </tr>
+            <tr>
+              <td><strong>Roto Frank (Đức)</strong></td>
+              <td>CHLB Đức / Châu Âu</td>
+              <td>1.8 - 2.5 mm</td>
+              <td>Sơn fluorocarbon chống muối biển</td>
+              <td>Roto bản lề ẩn, tay nắm cao cấp</td>
+              <td><span class="badge-tier tier-luxury">Biệt thự cao cấp / Dinh thự</span></td>
+            </tr>
+            <tr>
+              <td><strong>Maxpro.JP</strong></td>
+              <td>Công nghệ Nhật Bản</td>
+              <td>1.4 - 2.6 mm</td>
+              <td>Xi mạ Anodize ED (Chống muối 100%)</td>
+              <td>Cmech, Sigico, Hopo, Roto</td>
+              <td><span class="badge-tier tier-luxury">Ven biển / Biệt thự vườn</span></td>
+            </tr>
+            <tr>
+              <td><strong>Hopo Panorama</strong></td>
+              <td>Mỹ / Châu Âu</td>
+              <td>1.6 - 2.0 mm (Hệ Slim)</td>
+              <td>Sơn tĩnh điện AkzoNobel</td>
+              <td>Hopo đồng bộ cơ cấu trượt êm</td>
+              <td><span class="badge-tier tier-premium">Cửa lùa trượt panorama</span></td>
+            </tr>
+            <tr>
+              <td><strong>Xingfa Nhập Khẩu</strong></td>
+              <td>Quảng Đông (Tem Đỏ)</td>
+              <td>1.4 - 2.0 mm (Hệ 55, 93, 63)</td>
+              <td>Sơn tĩnh điện tiêu chuẩn</td>
+              <td>Kinlong, Draho, Cmech</td>
+              <td><span class="badge-tier tier-standard">Nhà phố, Biệt thự tiêu chuẩn</span></td>
+            </tr>
+            <tr>
+              <td><strong>Hyundai / Việt Nhật</strong></td>
+              <td>Việt - Hàn / Vijalco</td>
+              <td>1.2 - 2.0 mm</td>
+              <td>Sơn tĩnh điện / Anodize</td>
+              <td>Kinlong, Draho, phụ kiện nội địa</td>
+              <td><span class="badge-tier tier-standard">Công trình dự án, nhà liền kề</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7 STEPS SECTION -->
+    <section class="steps-section" id="quy-trinh">
+      <h3>🌟 Quy Trình 7 Bước Đảm Bảo Chất Lượng Thiên Bình</h3>
+      <p class="sub">Mọi bộ cửa và vách kính xuất xưởng từ Thiên Bình đều được kiểm soát gắt gao qua quy trình chuẩn hoá, cam kết độ kín khít, an toàn và thẩm mỹ tối ưu.</p>
+      
+      <div class="steps-grid">
+        <div class="step-box">
+          <div class="step-num">1</div>
+          <div class="step-title">Tiếp Nhận & Đề Bài</div>
+          <div class="step-desc">Ghi nhận bản vẽ kiến trúc & nhu cầu cụ thể</div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">2</div>
+          <div class="step-title">Khảo Sát Thực Tế</div>
+          <div class="step-desc">Đo đạc laser cốt sàn, trần và tải trọng gió</div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">3</div>
+          <div class="step-title">Phương Án A/B</div>
+          <div class="step-desc">Tư vấn cấu hình nhôm kính tối ưu ngân sách</div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">4</div>
+          <div class="step-title">Bóc Tách Vật Tư</div>
+          <div class="step-desc">Định mức chính xác từng mét nhôm & phụ kiện</div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">5</div>
+          <div class="step-title">Gia Công Xưởng</div>
+          <div class="step-desc">Máy cắt 2 đầu CNC, bấm góc thủy lực kín khít</div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">6</div>
+          <div class="step-title">KCS Nghiêm Ngặt</div>
+          <div class="step-desc">Kiểm tra dung sai góc, keo kết cấu & phụ kiện</div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">7</div>
+          <div class="step-title">Lắp Đặt & Bàn Giao</div>
+          <div class="step-desc">Cân chỉnh laser, nghiệm thu và bảo hành dài hạn</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & QUOTE SECTION -->
+    <section class="contact-card" id="contact">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Liên Hệ Tư Vấn Kỹ Thuật & Dự Toán Công Trình</h3>
+          <p>Đội ngũ kỹ sư Thiên Bình sẵn sàng hỗ trợ khảo sát hiện trạng thực tế, lên bản vẽ mặt cắt 2D/3D và bóc tách dự toán miễn phí cho công trình của bạn.</p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div class="info-content">
+                <h4>Hotline Kỹ Thuật & Kinh Doanh</h4>
+                <span>0988.xxx.xxx — Hỗ trợ 24/7 toàn quốc</span>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="info-content">
+                <h4>Văn Phòng & Xưởng Sản Xuất</h4>
+                <span>Hà Nội & các tỉnh phía Bắc — Máy móc gia công CNC hiện đại</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div class="info-content">
+                <h4>Cam Kết Từ Thiên Bình</h4>
+                <span>100% Nhôm kính & Phụ kiện có CO/CQ xuất xứ rõ ràng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+          <div class="form-group">
+            <label for="txtName">Họ và tên của bạn / Tên đơn vị (*)</label>
+            <input type="text" id="txtName" required placeholder="Ví dụ: Anh Tuấn / Công ty Kiến trúc ABC">
+          </div>
+          <div class="form-group">
+            <label for="txtPhone">Số điện thoại / Zalo (*)</label>
+            <input type="tel" id="txtPhone" required placeholder="Ví dụ: 0912 345 678">
+          </div>
+          <div class="form-group">
+            <label for="cboCategory">Hạng mục quan tâm</label>
+            <select id="cboCategory">
+              <option value="Biệt thự trọn gói">Cửa vách nhôm kính Biệt thự / Dinh thự</option>
+              <option value="Hệ nhôm cao cấp Schueco/Maxpro">Hệ nhôm Châu Âu Schüco / Roto / Maxpro</option>
+              <option value="Nhôm Xingfa nhập khẩu">Nhôm Xingfa Quảng Đông tem đỏ chính hãng</option>
+              <option value="Kính Low-E / Kính hộp">Kính hộp cản nhiệt Low-E cách âm chống ồn</option>
+              <option value="Mặt dựng toà nhà">Mặt dựng nhôm kính / Cửa tự động toà nhà</option>
+              <option value="Khác">Hạng mục khác</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="txtNote">Ghi chú hoặc kích thước sơ bộ</label>
+            <textarea id="txtNote" rows="3" placeholder="Nhập địa điểm công trình, số lượng cửa hoặc yêu cầu kỹ thuật đặc biệt..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">🚀 GỬI YÊU CẦU TƯ VẤN & BÁO GIÁ</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="brand">
+        <div class="brand-logo">TB</div>
+        <div class="brand-info">
+          <h1 style="font-size: 1.1rem; color: #ffffff;">THIÊN BÌNH</h1>
+          <span style="font-size: 0.7rem; color: #d4af37;">Vững bền kiến trúc - Nâng tầm không gian</span>
+        </div>
+      </div>
+      <div>
+        <span>Chuyên cung cấp Cửa nhôm kính Xingfa, Maxpro, Schüco, Kính cản nhiệt Low-E, Phụ kiện Giesse, Kinlong, Hafele</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 THIÊN BÌNH. Toàn bộ thông số sản phẩm được trích xuất từ tài liệu kỹ thuật NKTHIENBINH.
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-actions">
+    <a href="https://zalo.me" target="_blank" class="float-btn float-zalo" title="Chat Zalo ngay">Zalo</a>
+    <a href="tel:0988000000" class="float-btn float-phone" title="Gọi Hotline kỹ thuật">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    </a>
+    <button class="float-btn float-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Về đầu trang">
+      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </button>
+  </div>
+
+  <!-- MODAL DETAIL -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalContent">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    // PRODUCT DATA FROM NKTHIENBINH
+    const products = [
+      // HỆ NHÔM
+      {
+        id: "nhom-schueco",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Cao Cấp",
+        origin: "CHLB Đức",
+        name: "Hệ Nhôm Schüco (Đức)",
+        desc: "Đỉnh cao cửa nhôm thế giới. Cầu cách nhiệt Polyamide đa khoang, thiết kế rãnh C tiêu chuẩn Châu Âu, tích hợp phụ kiện thông minh Schüco.",
+        specs: [
+          { label: "Độ dày thanh nhôm", val: "2.0 mm - 3.0 mm" },
+          { label: "Cách âm / Kín nước", val: "Lên đến 45 dB / 1050 Pa" },
+          { label: "Phụ kiện tương thích", val: "Schüco chính hãng đồng bộ" },
+          { label: "Phân khúc đề xuất", val: "Dinh thự, Biệt thự siêu sang" }
+        ],
+        details: {
+          highlight: "Giải pháp nhôm cách nhiệt và cách âm số 1 thế giới đến từ CHLB Đức.",
+          properties: [
+            "Hệ thanh profile thiết kế đa khoang kết hợp cầu cách nhiệt Polyamide giúp hạn chế tối đa dẫn nhiệt vào mùa hè và thoát nhiệt mùa đông.",
+            "Cơ cấu rãnh C tiêu chuẩn Châu Âu tương thích hoàn toàn phụ kiện ẩn Schüco tải trọng cánh lên tới 300kg.",
+            "Bề mặt sơn tĩnh điện bảo hành 25 năm, chống bám bụi và chống ăn mòn hóa học cao cấp."
+          ]
+        }
+      },
+      {
+        id: "nhom-roto",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Cao Cấp",
+        origin: "CHLB Đức",
+        name: "Hệ Nhôm Roto Frank (Đức)",
+        desc: "Thương hiệu danh tiếng CHLB Đức với cơ cấu bản lề giấu kín, gioăng EPDM nguyên sinh 3 lớp, bảo vệ ngôi nhà trước mọi giông bão.",
+        specs: [
+          { label: "Độ dày thanh nhôm", val: "1.8 mm - 2.5 mm" },
+          { label: "Chống bão gió", val: "Chịu áp lực gió cấp 14" },
+          { label: "Phụ kiện đi kèm", val: "Roto Frank rãnh C đồng bộ" },
+          { label: "Phân khúc đề xuất", val: "Biệt thự hiện đại, Villa vườn" }
+        ],
+        details: {
+          highlight: "Sự kết hợp hoàn mỹ giữa cơ khí chính xác của Đức và thẩm mỹ tối giản.",
+          properties: [
+            "Bản lề ẩn hoàn toàn trong khung bao, mang lại góc nhìn thanh lịch, sang trọng.",
+            "Cơ chế khóa đa điểm quanh cánh cửa tăng cường độ an toàn và chống cạy phá tuyệt đối.",
+            "Hệ gioăng EPDM kép ngăn chặn hoàn toàn nước mưa tạt và bụi mịn xâm nhập."
+          ]
+        }
+      },
+      {
+        id: "nhom-maxpro",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Cao Cấp",
+        origin: "Nhật Bản (Anodize ED)",
+        name: "Hệ Nhôm Maxpro.JP",
+        desc: "Công nghệ mạ điện phân Anodize ED độc quyền Nhật Bản. Chống ăn mòn muối biển tuyệt đối, độ cứng bề mặt 58HRC, bảo hành màu 25 năm.",
+        specs: [
+          { label: "Độ dày thanh nhôm", val: "1.4 mm - 2.6 mm" },
+          { label: "Công nghệ bề mặt", val: "Anodize ED chống muối biển" },
+          { label: "Các hệ phổ biến", val: "Hệ 55, Hệ 65, Hệ 83, Lùa 115" },
+          { label: "Phân khúc đề xuất", val: "Công trình ven biển, Biệt thự cao cấp" }
+        ],
+        details: {
+          highlight: "Lựa chọn hàng đầu cho các công trình ven biển và khí hậu nhiệt đới ẩm Việt Nam.",
+          properties: [
+            "Bề mặt Anodize phủ ED mịn màng, chống bám vân tay, độ bền màu vượt trội hơn sơn tĩnh điện thông thường.",
+            "Tương thích với các dòng phụ kiện rãnh C cao cấp: Cmech, Sigico, Hopo, Roto.",
+            "Đa dạng màu sắc thời thượng: Nâu thu cafe, Vàng sâm banh, Xám đen ánh kim."
+          ]
+        }
+      },
+      {
+        id: "nhom-tostem",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Nhật Bản",
+        origin: "Nhật Bản",
+        name: "Hệ Cửa Nhôm Tostem",
+        desc: "Hệ thống cửa nhôm đồng bộ đúc nguyên khối hàng đầu Nhật Bản. Công nghệ phủ màu Texguard giữ độ bền màu trên 40 năm.",
+        specs: [
+          { label: "Độ dày profile", val: "1.4 mm - 2.2 mm" },
+          { label: "Công nghệ phủ", val: "Texguard nano chống xước" },
+          { label: "Tiêu chuẩn kiểm nghiệm", val: "JIS Nhật Bản / ASTM" },
+          { label: "Phân khúc đề xuất", val: "Nhà phố Nhật Bản, Biệt thự tối giản" }
+        ],
+        details: {
+          highlight: "Giải pháp cửa trọn gói đồng bộ cao cấp đến từ tập đoàn LIXIL Nhật Bản.",
+          properties: [
+            "Gia công và lắp ráp đồng bộ 100% tại nhà máy kiểm định chất lượng nghiêm ngặt.",
+            "Hệ thống thoát nước thông minh độc quyền giúp thoát nước mưa nhanh chóng ngay cả khi mưa bão lớn.",
+            "Vận hành êm ái, kéo trượt chỉ với lực nhẹ 5N."
+          ]
+        }
+      },
+      {
+        id: "nhom-hopo",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Cao Cấp",
+        origin: "Công Nghệ Mỹ/Đức",
+        name: "Hệ Nhôm Hopo Slim Panorama",
+        desc: "Hệ cửa lùa bản slim siêu mỏng, mở rộng tối đa tầm nhìn sân vườn và bể bơi. Khung nhôm giấu viền thời thượng cho kiến trúc hiện đại.",
+        specs: [
+          { label: "Bản rộng cánh nhìn thấy", val: "Chỉ từ 18 mm - 26 mm" },
+          { label: "Cơ cấu trượt", val: "Bánh xe chịu lực 400 kg/cánh" },
+          { label: "Độ dày nhôm", val: "1.6 mm - 2.0 mm" },
+          { label: "Phân khúc đề xuất", val: "Penthouse, Biệt thự View Panorama" }
+        ],
+        details: {
+          highlight: "Thiết kế tối giản tối đa viền nhôm để thu trọn không gian thiên nhiên.",
+          properties: [
+            "Hệ ray âm sàn phẳng hoàn toàn, an toàn cho trẻ nhỏ và người cao tuổi di chuyển.",
+            "Phụ kiện giảm chấn thủy lực đóng mở nhẹ nhàng, không gây tiếng ồn.",
+            "Tích hợp gioăng chống bụi và khóa chốt âm sàn tinh tế."
+          ]
+        }
+      },
+      {
+        id: "nhom-xingfa",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Tiêu Chuẩn",
+        origin: "Quảng Đông (Tem Đỏ)",
+        name: "Nhôm Xingfa Nhập Khẩu Quảng Đông",
+        desc: "Dòng nhôm định hình thông dụng và bền bỉ nhất tại Việt Nam. Kết cấu khoang rỗng có 2 đường gân gia cường đặc trưng, chịu va đập cực tốt.",
+        specs: [
+          { label: "Độ dày nhôm", val: "1.4 mm (cửa sổ) - 2.0 mm (cửa đi)" },
+          { label: "Hệ nhôm chính", val: "Hệ 55, Hệ 93 (lùa), Hệ 63 (xếp trượt)" },
+          { label: "Phụ kiện đi kèm", val: "Kinlong, Draho, Cmech" },
+          { label: "Phân khúc đề xuất", val: "Nhà phố, Biệt thự liền kề, Chung cư" }
+        ],
+        details: {
+          highlight: "Chuẩn mực chất lượng đã được khẳng định qua hàng ngàn công trình trên cả nước.",
+          properties: [
+            "Thiên Bình cam kết 100% thanh profile Xingfa tem đỏ Quảng Đông chính hãng kèm CO/CQ.",
+            "Ép góc bằng ke góc dày 4.0mm và keo ép góc PU88 chống xé góc và chống ngấm nước triệt để.",
+            "Sơn tĩnh điện ngoài trời chống bạc màu và ăn mòn thời tiết."
+          ]
+        }
+      },
+      {
+        id: "nhom-pmi",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Cao Cấp",
+        origin: "Malaysia (Press Metal)",
+        name: "Hệ Nhôm PMI Malaysia",
+        desc: "Sản phẩm của tập đoàn Press Metal danh tiếng. Có cả hệ không cầu và có cầu cách nhiệt, độ hoàn thiện tinh xảo và sang trọng.",
+        specs: [
+          { label: "Độ dày thanh nhôm", val: "1.4 mm - 2.0 mm" },
+          { label: "Bề mặt sơn", val: "AkzoNobel bóng mịn kháng muối" },
+          { label: "Hệ sản phẩm", val: "PMI 50, PMI 70, PMI 100" },
+          { label: "Phân khúc đề xuất", val: "Biệt thự, Nhà vườn, Căn hộ cao cấp" }
+        ],
+        details: {
+          highlight: "Phân khúc cao cấp với mức giá tối ưu cho chủ đầu tư thông thái.",
+          properties: [
+            "Hợp kim nhôm 6063-T5 tiêu chuẩn độ cứng cao, chống biến dạng dưới lực gió lớn.",
+            "Rãnh C chuẩn Châu Âu lắp đặt phụ kiện cao cấp dễ dàng mà không cần khoét nhôm phá vỡ kết cấu."
+          ]
+        }
+      },
+      {
+        id: "nhom-hyundai",
+        category: "nhom",
+        badge: "badge-nhom",
+        catName: "Hệ Nhôm Tiêu Chuẩn",
+        origin: "Việt Nam - Hàn Quốc",
+        name: "Hệ Nhôm Hyundai / Việt Nhật",
+        desc: "Hệ nhôm công nghiệp tiêu chuẩn cao, cấu tạo chắc chắn, độ bền cơ lý tính ổn định, tối ưu chi phí cho các công trình diện tích lớn.",
+        specs: [
+          { label: "Độ dày profile", val: "1.2 mm - 1.8 mm" },
+          { label: "Tiêu chuẩn sản xuất", val: "TCVN / JIS H4100" },
+          { label: "Ứng dụng chính", val: "Cửa mở quay, vách kính phân chia" },
+          { label: "Phân khúc đề xuất", val: "Nhà ở dân dụng, Công trình văn phòng" }
+        ],
+        details: {
+          highlight: "Độ bền bỉ vững chãi cùng giá thành kinh tế nhất trong phân khúc nhôm định hình chất lượng cao.",
+          properties: [
+            "Sản xuất từ phôi nhôm nguyên chất không pha tạp chất chì, thân thiện môi trường.",
+            "Phù hợp với nhiều hệ phụ kiện thông dụng trên thị trường."
+          ]
+        }
+      },
+
+      // KÍNH KIẾN TRÚC
+      {
+        id: "kinh-low-e",
+        category: "kinh",
+        badge: "badge-kinh",
+        catName: "Kính Tiết Kiệm Năng Lượng",
+        origin: "VFG / AGC / Viglacera",
+        name: "Kính Cản Nhiệt Low-E (Low Emissivity)",
+        desc: "Phủ hợp chất nano bạc cản tia hồng ngoại sinh nhiệt. Giảm đến 65% nhiệt lượng mặt trời truyền vào nhà, tiết kiệm điện điều hòa.",
+        specs: [
+          { label: "Hệ số truyền nhiệt (U-value)", val: "< 1.8 W/m²K" },
+          { label: "Độ cản tia UV", val: "> 99%" },
+          { label: "Quy cách kính", val: "Kính hộp 5+9A+5mm, 6+12A+6mm" },
+          { label: "Phân khúc đề xuất", val: "Biệt thự hướng Tây, Khách sạn cao cấp" }
+        ],
+        details: {
+          highlight: "Giải pháp chống nóng hiện đại và thông minh nhất cho ngôi nhà thế hệ mới.",
+          properties: [
+            "Giữ cho không gian bên trong luôn mát mẻ vào mùa hè và ấm áp vào mùa đông.",
+            "Không làm giảm độ truyền sáng tự nhiên vào phòng như dán decal phim cách nhiệt thông thường.",
+            "Bảo vệ nội thất gỗ, da, tranh ảnh khỏi bị bạc màu do bức xạ tia cực tím (UV)."
+          ]
+        }
+      },
+      {
+        id: "kinh-solar-control",
+        category: "kinh",
+        badge: "badge-kinh",
+        catName: "Kính Tiết Kiệm Năng Lượng",
+        origin: "VFG / Pilkington / AGC",
+        name: "Kính Phản Quang Solar Control",
+        desc: "Kính phủ oxit kim loại chọn lọc giúp phản xạ ánh nắng chói gắt, tạo hiệu ứng màu sắc kiến trúc sang trọng và riêng tư từ bên ngoài.",
+        specs: [
+          { label: "Độ truyền sáng (VLT)", val: "30% - 50%" },
+          { label: "Hệ số hấp thụ nhiệt (SHGC)", val: "0.35 - 0.45" },
+          { label: "Màu sắc kiến trúc", val: "Xanh lá, Xanh biển, Xám khói, Vàng đồng" },
+          { label: "Phân khúc đề xuất", val: "Mặt tiền nhà phố, Toà nhà văn phòng" }
+        ],
+        details: {
+          highlight: "Vừa kiểm soát nhiệt năng, vừa tạo điểm nhấn mặt tiền kiến trúc hiện đại.",
+          properties: [
+            "Giảm độ chói mắt cho người ngồi gần cửa sổ mà vẫn bao quát tầm nhìn ra cảnh quan.",
+            "Có thể tôi cường lực hoặc ghép dán an toàn để tối ưu độ chịu tải gió bão."
+          ]
+        }
+      },
+      {
+        id: "kinh-hop-cach-am",
+        category: "kinh",
+        badge: "badge-kinh",
+        catName: "Kính Cách Âm Cách Nhiệt",
+        origin: "Thái Dương / Hải Long / VFG",
+        name: "Kính Hộp Bơm Khí Trơ Argon",
+        desc: "Cấu tạo từ 2 hay 3 lớp kính, ngăn cách bởi cữ nhôm chứa hạt hút ẩm và nạp khí trơ Argon. Triệt tiêu hoàn toàn tiếng ồn đô thị xe cộ.",
+        specs: [
+          { label: "Khả năng giảm ồn", val: "Lên đến 35 dB - 42 dB" },
+          { label: "Độ dày cữ nhôm", val: "6A, 9A, 12A, 16A" },
+          { label: "Keo làm kín", val: "Keo Butyl sơ cấp + Silicone thứ cấp" },
+          { label: "Phân khúc đề xuất", val: "Mặt đường lớn, Phòng ngủ, Phòng làm việc" }
+        ],
+        details: {
+          highlight: "Mang lại không gian tĩnh lặng tuyệt đối giữa lòng đô thị nhộn nhịp.",
+          properties: [
+            "Chống đọng sương hoàn toàn trên bề mặt kính vào mùa đông hoặc khi trời nồm ẩm.",
+            "Tích hợp thêm nan trang trí hoặc rèm chớp nhôm điều khiển trong hộp kính tiện lợi."
+          ]
+        }
+      },
+      {
+        id: "kinh-cuong-luc",
+        category: "kinh",
+        badge: "badge-kinh",
+        catName: "Kính An Toàn",
+        origin: "Việt Nhật / Chu Lai / Hải Long",
+        name: "Kính Tôi Cường Lực (Tempered Glass)",
+        desc: "Được gia nhiệt đến 700°C và làm nguội đột ngột bằng luồng khí lạnh. Chịu lực va đập gấp 4-5 lần kính thường, vỡ vụn hạt ngô an toàn.",
+        specs: [
+          { label: "Độ dày tiêu chuẩn", val: "8 mm, 10 mm, 12 mm, 15 mm, 19 mm" },
+          { label: "Tiêu chuẩn kiểm định", val: "TCVN 7455:2013" },
+          { label: "Ứng dụng chính", val: "Cửa kính thủy lực, Vách kính, Lan can" },
+          { label: "Đặc tính an toàn", val: "Không gây sát thương khi vỡ" }
+        ],
+        details: {
+          highlight: "Vật liệu nền tảng cho mọi công trình hiện đại nhờ độ bền cơ học ấn tượng.",
+          properties: [
+            "Khả năng chịu sốc nhiệt lên tới 150°C không nứt vỡ.",
+            "Gia công mài xiết bóng cạnh CNC và khoan khoét lỗ chính xác trước khi tôi nhiệt."
+          ]
+        }
+      },
+      {
+        id: "kinh-dan-an-toan",
+        category: "kinh",
+        badge: "badge-kinh",
+        catName: "Kính An Toàn Chống Trộm",
+        origin: "Việt Nhật / VFG / Viglacera",
+        name: "Kính Dán An Toàn Nhiều Lớp (Laminated)",
+        desc: "Kết hợp từ 2 lớp kính với màng phim PVB chuyên dụng. Khi nứt vỡ mảng kính vẫn dính chặt vào phim, chống rơi rớt và ngăn đột nhập.",
+        specs: [
+          { label: "Độ dày phôi kính", val: "6.38 mm, 8.38 mm, 10.38 mm, 12.38 mm" },
+          { label: "Lớp màng trung gian", val: "Phim dán PVB 0.38 - 1.52 mm" },
+          { label: "Màu sắc phim", val: "Trong suốt, Trắng sữa, Xanh dương" },
+          { label: "Phân khúc đề xuất", val: "Cửa sổ tầng cao, Mái kính, Vách mặt ngoài" }
+        ],
+        details: {
+          highlight: "Bảo vệ an toàn tính mạng con người và tài sản tuyệt đối trước va đập.",
+          properties: [
+            "Ngăn chặn kẻ gian cạy phá đột nhập qua cửa sổ hoặc ban công.",
+            "Lọc 99% tia cực tím bảo vệ làn da và vật dụng gia đình."
+          ]
+        }
+      },
+
+      // PHỤ KIỆN KIM KHÍ
+      {
+        id: "pk-giesse",
+        category: "phukien",
+        badge: "badge-phukien",
+        catName: "Phụ Kiện Rãnh C Cao Cấp",
+        origin: "Ý (Italy)",
+        name: "Hệ Phụ Kiện Giesse (Ý)",
+        desc: "Thương hiệu phụ kiện rãnh C hàng đầu Châu Âu. Vận hành êm ái, cơ cấu truyền động đa điểm khóa chính xác, tải trọng cánh cửa lên đến 200kg.",
+        specs: [
+          { label: "Tiêu chuẩn cơ khí", val: "Rãnh C tiêu chuẩn Châu Âu" },
+          { label: "Bề mặt xử lý", val: "Sơn mạ điện phân kháng muối biển" },
+          { label: "Các chi tiết", val: "Tay nắm đa điểm, Bản lề cối, Khóa chốt" },
+          { label: "Phân khúc tương thích", val: "Nhôm Schüco, Maxpro, Roto, PMI" }
+        ],
+        details: {
+          highlight: "Độ tinh xảo và êm ái đạt chuẩn mực đỉnh cao của ngành cơ khí Ý.",
+          properties: [
+            "Tay nắm thiết kế công thái học cầm nắm chắc chắn và thanh thoát.",
+            "Bản lề chịu tải trọng cánh siêu nặng, chống xệ cửa sau 10 năm sử dụng."
+          ]
+        }
+      },
+      {
+        id: "pk-sigico",
+        category: "phukien",
+        badge: "badge-phukien",
+        catName: "Phụ Kiện Rãnh C Cao Cấp",
+        origin: "CHLB Đức",
+        name: "Hệ Phụ Kiện Sigico (Đức)",
+        desc: "Công nghệ sơn phủ Fluorocarbon bền màu, tay nắm vuông hiện đại tối giản. Thích hợp cho các công trình biệt thự villa sang trọng.",
+        specs: [
+          { label: "Công nghệ sơn", val: "Fluorocarbon chống trầy xước" },
+          { label: "Màu sắc thời thượng", val: "Màu vàng sâm banh, Xám bạc, Đen mờ" },
+          { label: "Bảo hành", val: "5 năm chống oxy hóa" },
+          { label: "Phân khúc tương thích", val: "Nhôm Maxpro, Hopo, Xingfa rãnh C" }
+        ],
+        details: {
+          highlight: "Phong cách tối giản chuẩn Đức, nâng tầm thẩm mỹ nội ngoại thất.",
+          properties: [
+            "Bản lề chịu lực có vít căn chỉnh 3 chiều (lên xuống, ra vào, trái phải).",
+            "Cơ cấu lò xo trợ lực giúp vặn tay nắm cực kỳ nhẹ nhàng."
+          ]
+        }
+      },
+      {
+        id: "pk-kinlong",
+        category: "phukien",
+        badge: "badge-phukien",
+        catName: "Phụ Kiện Tiêu Chuẩn",
+        origin: "Quảng Đông (Chính Hãng)",
+        name: "Phụ Kiện Kinlong & Draho Đồng Bộ",
+        desc: "Hệ phụ kiện đồng bộ chuyên dụng và phổ biến nhất cho nhôm Xingfa. Bản lề 3D căn chỉnh linh hoạt, khóa đơn điểm và đa điểm an toàn.",
+        specs: [
+          { label: "Hệ sản phẩm", val: "Bản lề 3D, 4D, Tay nắm gạt, Bánh xe lùa" },
+          { label: "Chất liệu phôi", val: "Hợp kim kẽm, Inox 304 không rỉ" },
+          { label: "Cam kết Thiên Bình", val: "100% chính hãng loại 1 (Chống hàng nhái)" },
+          { label: "Phân khúc tương thích", val: "Nhôm Xingfa 55, 93, 63, Việt Pháp" }
+        ],
+        details: {
+          highlight: "Phụ kiện quốc dân với giá thành hợp lý và độ bền bỉ đã kiểm chứng.",
+          properties: [
+            "Thiên Bình nói KHÔNG với phụ kiện Kinlong nhái loại 2, loại 3 trôi nổi trên thị trường.",
+            "Lõi khóa đồng nguyên chất và thân khóa Inox 304 chống kẹt rỉ sét."
+          ]
+        }
+      },
+      {
+        id: "pk-vvp",
+        category: "phukien",
+        badge: "badge-phukien",
+        catName: "Phụ Kiện Kính Cường Lực",
+        origin: "Thái Lan (VVP)",
+        name: "Bản Lề Sàn & Kẹp Kính VVP Thái Lan",
+        desc: "Chuyên dụng cho cửa kính thủy lực mở quay, vách kính mặt tiền và phòng tắm kính. Vận hành thủy lực êm ái, góc mở 90° - 125°.",
+        specs: [
+          { label: "Tải trọng bản lề sàn", val: "FC34-105kg, FC34-150kg, FC49-250kg" },
+          { label: "Chất liệu nắp kẹp", val: "Inox 304 đánh bóng gương / xước mờ" },
+          { label: "Hệ phụ kiện", val: "Kẹp trên, kẹp dưới, kẹp góc L, khóa sàn" },
+          { label: "Ứng dụng chính", val: "Cửa chính đại sảnh, Showroom, Cửa hàng" }
+        ],
+        details: {
+          highlight: "Sức mạnh thủy lực ổn định với dầu thủy lực chống đông đặc.",
+          properties: [
+            "Có van điều chỉnh tốc độ đóng cửa nhanh hay chậm tùy ý người sử dụng.",
+            "Thân bản lề đúc từ gang xám chịu lực nén cực cao chôn âm dưới sàn nhà."
+          ]
+        }
+      },
+      {
+        id: "pk-khoa-van-tay",
+        category: "phukien",
+        badge: "badge-phukien",
+        catName: "Khóa Điện Tử Thông Minh",
+        origin: "Công Nghệ Châu Âu",
+        name: "Khóa Vân Tay Chuyên Dụng Đố Hẹp Xingfa",
+        desc: "Thiết kế thân khóa siêu mỏng phù hợp tuyệt đối cho đố cửa nhôm Xingfa. Tích hợp mở bằng Vân tay FPC Thụy Điển, Mã số, Thẻ từ và App điện thoại.",
+        specs: [
+          { label: "Phương thức mở khóa", val: "Vân tay, Mật mã, Thẻ từ, Chìa cơ, App WiFi" },
+          { label: "Tốc độ nhận diện", val: "< 0.5 giây (Cảm biến FPC sinh trắc học)" },
+          { label: "Tiêu chuẩn chống nước", val: "IP65 ngoài trời" },
+          { label: "Bộ nhớ lưu trữ", val: "100 vân tay + 100 thẻ từ + 100 mã số" }
+        ],
+        details: {
+          highlight: "Giải pháp nâng tầm an ninh công nghệ 4.0 cho ngôi nhà của bạn.",
+          properties: [
+            "Gửi cảnh báo và mở cửa từ xa qua điện thoại thông minh khi có khách đến thăm.",
+            "Chế độ khóa tự động sau khi khép cửa, chống quên khóa cửa gây mất an toàn."
+          ]
+        }
+      },
+
+      // HỆ ĐẶC BIỆT & NỘI THẤT
+      {
+        id: "he-mat-dung",
+        category: "he-dac-biet",
+        badge: "badge-he-dac-biet",
+        catName: "Mặt Dựng Toà Nhà",
+        origin: "Thái Dương / Xingfa",
+        name: "Hệ Vách Kính Mặt Dựng (Stick / Unitized)",
+        desc: "Giải pháp mặt tiền kính khổ lớn cho showroom, toà nhà văn phòng. Hệ giấu đố tạo bề mặt phẳng liền mạch hoặc lộ đố tạo vẻ ngoài khỏe khoắn.",
+        specs: [
+          { label: "Kích thước đố nhôm", val: "52x120 mm, 52x150 mm, 52x200 mm" },
+          { label: "Chủng loại kính", val: "Kính phản quang, Kính hộp 24-28 mm" },
+          { label: "Keo kết cấu liên kết", val: "Silicone Dow Corning (Dowsil 983/791)" },
+          { label: "Khả năng chịu áp lực", val: "Thiết kế theo vùng gió TCVN 2737" }
+        ],
+        details: {
+          highlight: "Biểu tượng kiến trúc hiện đại, lấy sáng tự nhiên và mở rộng không gian văn phòng.",
+          properties: [
+            "Bảo đảm độ kín nước 100% nhờ hệ thống rãnh thoát nước ngầm chuyên dụng.",
+            "Liên kết bản mã thép mạ kẽm và bu lông nở inox cường độ cao vững chãi theo thời gian."
+          ]
+        }
+      },
+      {
+        id: "he-cua-tu-dong",
+        category: "he-dac-biet",
+        badge: "badge-he-dac-biet",
+        catName: "Cửa Tự Động & Nội Thất",
+        origin: "Nhật Bản / Hàn Quốc",
+        name: "Cửa Trượt Tự Động & Cánh Kính Slim Nội Thất",
+        desc: "Cửa trượt tự động cảm biến mắt thần hồng ngoại cùng hệ nhôm slim cánh kính siêu mỏng cho tủ áo, tủ rượu nội thất cao cấp.",
+        specs: [
+          { label: "Motor cửa tự động", val: "Động cơ DC không chổi than 24V" },
+          { label: "Nhôm slim nội thất", val: "Bản nhôm mỏng 20 mm, kính sọc/kính trà" },
+          { label: "Cảm biến an toàn", val: "Mắt thần chống kẹt người qua lại" },
+          { label: "Ứng dụng chính", val: "Sảnh lễ tân, Tủ áo cánh kính cao cấp" }
+        ],
+        details: {
+          highlight: "Sự sang trọng, tiện nghi và lịch thiệp cho nội thất phòng khách và sảnh đón tiếp.",
+          properties: [
+            "Tự động đảo chiều khi gặp vật cản, an toàn tuyệt đối cho người già và trẻ nhỏ.",
+            "Cánh kính tủ áo khung nhôm slim kết hợp đèn LED cảm ứng tạo hiệu ứng như showroom thời trang cao cấp."
+          ]
+        }
+      }
+    ];
+
+    // RENDER PRODUCTS
+    function renderProducts(items) {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+      
+      if (items.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: #ffffff; border-radius: 14px; border: 1px dashed #cbd5e1;">
+            <div style="font-size: 2.5rem; margin-bottom: 12px;">🔍</div>
+            <h4 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 6px;">Không tìm thấy sản phẩm phù hợp</h4>
+            <p style="color: #64748b; font-size: 0.95rem;">Vui lòng thử lại với từ khóa khác (VD: Xingfa, Schueco, Maxpro, Low-E, Kinlong...)</p>
+          </div>
+        `;
+        document.getElementById('resultCount').innerText = `Hiển thị 0 sản phẩm`;
+        return;
+      }
+
+      items.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <div>
+            <div class="card-top">
+              <span class="category-badge ${p.badge}">${p.catName}</span>
+              <span class="origin-tag">${p.origin}</span>
+            </div>
+            <h4 class="product-name">${p.name}</h4>
+            <p class="product-desc">${p.desc}</p>
+            <div class="spec-list">
+              ${p.specs.map(s => `
+                <div class="spec-item">
+                  <span class="spec-label">${s.label}:</span>
+                  <span class="spec-val">${s.val}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-detail" onclick="openDetailModal('${p.id}')">Xem chi tiết</button>
+            <a href="#contact" class="btn-quote" onclick="selectCategoryForQuote('${p.name}')">
+              Báo giá
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      document.getElementById('resultCount').innerText = `Hiển thị ${items.length} sản phẩm`;
+    }
+
+    // FILTER CATEGORY
+    let currentCategory = 'all';
+    function filterCategory(cat, btn) {
+      currentCategory = cat;
+      if (btn) {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+
+      const titles = {
+        'all': 'Tất Cả Sản Phẩm & Giải Pháp Thiên Bình',
+        'nhom': 'Hệ Cửa Nhôm Cao Cấp (Schüco, Roto, Maxpro, Xingfa...)',
+        'kinh': 'Kính Kiến Trúc & Tiết Kiệm Năng Lượng (Low-E, Kính Hộp...)',
+        'phukien': 'Hệ Phụ Kiện Kim Khí Đồng Bộ (Giesse, Sigico, Kinlong...)',
+        'he-dac-biet': 'Hệ Mặt Dựng Kính & Cửa Tự Động Chuyên Dụng'
+      };
+      document.getElementById('categoryTitle').innerText = titles[cat] || 'Danh Mục Sản Phẩm';
+
+      applyFilterAndSearch();
+    }
+
+    // SEARCH
+    function handleSearch() {
+      applyFilterAndSearch();
+    }
+
+    function applyFilterAndSearch() {
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      
+      const filtered = products.filter(p => {
+        const matchCategory = (currentCategory === 'all') || (p.category === currentCategory);
+        const matchQuery = !query || 
+          p.name.toLowerCase().includes(query) ||
+          p.desc.toLowerCase().includes(query) ||
+          p.origin.toLowerCase().includes(query) ||
+          p.specs.some(s => s.val.toLowerCase().includes(query));
+        return matchCategory && matchQuery;
+      });
+
+      renderProducts(filtered);
+    }
+
+    // MODAL DETAIL
+    function openDetailModal(id) {
+      const p = products.find(x => x.id === id);
+      if (!p) return;
+
+      const modalContent = document.getElementById('modalContent');
+      modalContent.innerHTML = `
+        <div style="margin-bottom: 20px;">
+          <span class="category-badge ${p.badge}">${p.catName}</span>
+          <span class="origin-tag" style="margin-left: 8px;">${p.origin}</span>
+        </div>
+        <h3 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 12px;">${p.name}</h3>
+        <p style="font-size: 1.05rem; color: #475569; margin-bottom: 24px; font-weight: 500;">${p.details.highlight}</p>
+
+        <h4 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Đặc tính kỹ thuật nổi bật:</h4>
+        <ul style="padding-left: 20px; margin-bottom: 24px; color: #334155; line-height: 1.7; font-size: 0.95rem;">
+          ${p.details.properties.map(pr => `<li>${pr}</li>`).join('')}
+        </ul>
+
+        <h4 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Bảng thông số cấu hình:</h4>
+        <div class="spec-list" style="margin-bottom: 26px;">
+          ${p.specs.map(s => `
+            <div class="spec-item" style="padding: 8px 0;">
+              <span class="spec-label" style="font-size: 0.9rem;">${s.label}:</span>
+              <span class="spec-val" style="font-size: 0.9rem;">${s.val}</span>
+            </div>
+          `).join('')}
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end;">
+          <button class="btn-detail" onclick="closeModal()" style="max-width: 120px;">Đóng</button>
+          <a href="#contact" class="btn-cta" onclick="closeModal(); selectCategoryForQuote('${p.name}')" style="font-size: 0.9rem; padding: 10px 22px;">
+            Nhận Báo Giá Hệ Này
+          </a>
+        </div>
+      `;
+
+      document.getElementById('detailModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('detailModal').classList.remove('active');
+    }
+
+    // AUTO SELECT QUOTE
+    function selectCategoryForQuote(productName) {
+      const note = document.getElementById('txtNote');
+      note.value = `Tôi muốn nhận tư vấn và báo giá chi tiết cho: ${productName}`;
+    }
+
+    // FORM SUBMIT
+    function handleFormSubmit() {
+      const name = document.getElementById('txtName').value;
+      const phone = document.getElementById('txtPhone').value;
+      const category = document.getElementById('cboCategory').value;
+      
+      alert(`Cảm ơn Quý khách ${name}!\nThiên Bình đã nhận được yêu cầu tư vấn hạng mục "${category}" qua số ${phone}.\nĐội ngũ kỹ thuật sẽ liên hệ gửi báo giá dự toán trong vòng 15-30 phút!`);
+      document.getElementById('txtName').value = '';
+      document.getElementById('txtPhone').value = '';
+      document.getElementById('txtNote').value = '';
+    }
+
+    // INIT
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts(products);
+    });
+  </script>
+</body>
+</html>
