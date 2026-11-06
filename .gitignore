@@ -1,0 +1,30 @@
+# ==============================================================================
+# HỆ THỐNG AI AUTO — THIÊN BÌNH (.gitignore)
+# ==============================================================================
+
+# File cấu hình chứa Token bảo mật cá nhân (KHÔNG PUSH LÊN GITHUB)
+mcp_config.json
+.env
+.env.local
+*.token
+*.key
+*.pem
+github_token.txt
+
+# File tạm thời của Microsoft Office (Word, Excel)
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# File tạm của Hệ thống và Antigravity
+.system_generated/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python & Node.js
+__pycache__/
+*.py[cod]
+node_modules/
