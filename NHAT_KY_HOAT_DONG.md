@@ -22,3 +22,5 @@
 | INT-011 | 06/11/2026 | TBG-Captain | Khảo sát kho 5GB NKTHIENBINH, thiết kế Landing Page sản phẩm (docs/index.html) & xuất bản GitHub Pages | Đã tạo trang web chuẩn responsive, chắt lọc 3 phân hệ, kích hoạt thành công link GitHub Pages | 100 | **HOÀN THÀNH XUẤT SẮC** |
 | INT-012 | 06/11/2026 | TBG-Captain | Nâng cấp toàn diện Landing Page theo chuẩn Reynaers Aluminium (tích hợp 11 ảnh thực tế, mặt cắt CAD, 6 dự án) | Hoàn tất thiết kế kiến trúc cao cấp, đẩy lên GitHub Pages, kiểm tra HTTP 200 OK | 100 | **HOÀN THÀNH XUẤT SẮC** |
 | INT-013 | 06/11/2026 | TBG-Captain | Cập nhật Hotline Tư Vấn Kỹ Thuật 24/7 chính thức: 0822.121.111 & liên kết chat Zalo trực tiếp | Đã đồng bộ toàn bộ thanh topbar, nút gọi nổi, phần liên hệ và link zalo.me/0822121111 | 100 | **HOÀN THÀNH XUẤT SẮC** |
+| INT-014 | 09/11/2026 | TBG-Captain | Trích xuất toàn văn Profile PDF 21 trang & Tích hợp Hồ sơ năng lực Thiên Bình (MST 0107414620, máy CNC, 10 dự án lớn, quy trình 7 bước) vào Landing Page | Hoàn tất tích hợp, deploy thành công GitHub Pages (HTTP 200 OK) | 100 | **HOÀN THÀNH XUẤT SẮC** |
+
