@@ -23,11 +23,42 @@ $word.DisplayAlerts = 0
 $doc = $word.Documents.Add()
 $sel = $word.Selection
 
+function Insert-PostImage($id) {
+    if ($id -ne "" -and $imgMap.ContainsKey($id)) {
+        $picPath = $imgMap[$id]
+        if (Test-Path $picPath) {
+            Write-Host "Chen anh cho Bai $id : $picPath"
+            $shape = $sel.InlineShapes.AddPicture($picPath)
+            $shape.LockAspectRatio = $true
+            if ($shape.Width -gt 420) {
+                $shape.Width = 420
+            }
+            $sel.TypeParagraph()
+            $sel.Font.Name = "Arial"
+            $sel.Font.Size = 10
+            $sel.Font.Bold = 1
+            $sel.Font.Color = 0x008000
+            $sel.ParagraphFormat.Alignment = 1
+            $sel.TypeText("[Hinh anh cong trinh thuc te Thien Binh - Bai $id]")
+            $sel.TypeParagraph()
+            $sel.Font.Size = 8
+            $sel.Font.Bold = 0
+            $sel.Font.Color = 0x888888
+            $sel.TypeText("Nguon anh thuc te: $picPath")
+            $sel.TypeParagraph()
+            $sel.TypeParagraph()
+        }
+    }
+}
+
 $lines = [System.IO.File]::ReadAllLines($MdPath, [System.Text.Encoding]::UTF8)
 $currentId = ""
 
 foreach ($line in $lines) {
     if ($line -match '### B.*I (\d+)') {
+        if ($currentId -ne "") {
+            Insert-PostImage $currentId
+        }
         $currentId = $matches[1]
         $sel.Font.Name = "Arial"
         $sel.Font.Size = 14
@@ -55,44 +86,20 @@ foreach ($line in $lines) {
         $sel.TypeText($line.Substring(3))
         $sel.TypeParagraph()
     }
-    elseif ($line.StartsWith('* **CTA') -or $line.StartsWith('* **K') -or $line -match 'CTA:') {
+    elseif ($line.StartsWith('> ') -or $line.StartsWith('>')) {
         $sel.Font.Name = "Arial"
-        $sel.Font.Size = 11
-        $sel.Font.Bold = 1
-        $sel.Font.Color = 0xC00000
+        $sel.Font.Size = 10.5
+        $sel.Font.Italic = 1
+        $sel.Font.Color = 0x333333
         $sel.ParagraphFormat.Alignment = 0
-        $sel.TypeText($line)
-        $sel.TypeParagraph()
-        
-        # Chen anh ngay sau CTA
-        if ($currentId -ne "" -and $imgMap.ContainsKey($currentId)) {
-            $picPath = $imgMap[$currentId]
-            if (Test-Path $picPath) {
-                Write-Host "Chen anh cho Bai $currentId : $picPath"
-                $shape = $sel.InlineShapes.AddPicture($picPath)
-                $shape.LockAspectRatio = $true
-                if ($shape.Width -gt 420) {
-                    $shape.Width = 420
-                }
-                $sel.TypeParagraph()
-                $sel.Font.Name = "Arial"
-                $sel.Font.Size = 10
-                $sel.Font.Bold = 1
-                $sel.Font.Color = 0x008000
-                $sel.ParagraphFormat.Alignment = 1
-                $sel.TypeText("[Hinh anh cong trinh thuc te Thien Binh - Bai $currentId]")
-                $sel.TypeParagraph()
-                $sel.Font.Size = 8
-                $sel.Font.Bold = 0
-                $sel.Font.Color = 0x888888
-                $sel.TypeText("Nguon anh: $picPath")
-                $sel.TypeParagraph()
-                $sel.TypeParagraph()
-            }
-            $currentId = ""
+        $cleanLine = $line.TrimStart('>').Trim()
+        if ($cleanLine.Length -gt 0) {
+            $sel.TypeText($cleanLine)
+            $sel.TypeParagraph()
         }
+        $sel.Font.Italic = 0
     }
-    elseif ($line.StartsWith('* **') -or $line.StartsWith('- **')) {
+    elseif ($line.StartsWith('* **') -or $line.StartsWith('- **') -or $line.StartsWith('**')) {
         $sel.Font.Name = "Arial"
         $sel.Font.Size = 11
         $sel.Font.Bold = 1
@@ -121,6 +128,10 @@ foreach ($line in $lines) {
             $sel.TypeParagraph()
         }
     }
+}
+
+if ($currentId -ne "") {
+    Insert-PostImage $currentId
 }
 
 Write-Host "Luu file: $OutputFile"
